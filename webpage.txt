@@ -1,0 +1,573 @@
+Individuals
+	For
+Businesses
+	For
+Universities
+	For
+Governments
+	For
+Explore
+Degrees
+​
+Log In
+Join for Free
+Join for Free
+Fundamentals of Quantitative Modeling
+About
+Outcomes
+Modules
+Recommendations
+Testimonials
+Reviews
+Browse
+Business
+Business Essentials
+Get one of our best deals and build skills with 50% off Coursera Plus.
+	3 days left!
+	Save now.
+Fundamentals of Quantitative Modeling
+This course is part of multiple programs.
+	Learn more
+Instructor:
+	Richard Waterman
+Enroll for free
+Starts Jun 16
+already enrolled
+	287,140
+Included with
+	Coursera Plus
+
+
+Learn more
+4 modules
+Gain insight into a topic and learn the fundamentals.
+4.6
+9,374 reviews
+1 week to complete
+at 10 hours a week
+Flexible schedule
+Learn at your own pace
+96%
+Most learners liked this course
+4 modules
+Gain insight into a topic and learn the fundamentals.
+4.6
+9,374 reviews
+1 week to complete
+at 10 hours a week
+Flexible schedule
+Learn at your own pace
+96%
+Most learners liked this course
+About
+Outcomes
+Modules
+Recommendations
+Testimonials
+Reviews
+Skills you'll gain
+Business Modeling
+Data Modeling
+Probability
+Model Optimization
+Mathematical Modeling
+Regression Analysis
+Probability Distribution
+Risk Analysis
+Logistic Regression
+Statistical Modeling
+Predictive Modeling
+Statistical Methods
+Forecasting
+Simulation and Simulation Software
+Predictive Analytics
+Business Analysis
+Vocabulary
+Show all
+Details to know
+Shareable certificate
+Add to your LinkedIn profile
+Assessments
+8 assignments
+Taught in English
+23 languages available
+See how employees at top companies are mastering in-demand skills
+Learn more about Coursera for Business
+Build your subject-matter expertise
+This course is available as part of
+	multiple programs
+When you enroll in this course, you'll also be asked to select a specific program.
+Learn new concepts from industry experts
+Gain a foundational understanding of a subject or tool
+Develop job-relevant skills with hands-on projects
+Earn a shareable career certificate
+There are 4 modules in this course
+How can you put data to work for you? Specifically, how can numbers in a spreadsheet tell us about present and past business activities, and how can we use them to forecast the future? The answer is in building quantitative models, and this course is designed to help you understand the fundamentals of this critical, foundational, business skill. Through a series of short lectures, demonstrations, and assignments, you’ll learn the key ideas and process of quantitative modeling so that you can begin to create your own models for your own business or enterprise. By the end of this course, you will have seen a variety of practical commonly used quantitative models as well as the building blocks that will allow you to start structuring your own models. These building blocks will be put to use in the other courses in this Specialization.
+Read more
+Module 1: Introduction to Models
+Module 1
+	
+
+	to complete
+		2 hours
+Module details
+What's included
+7 videos
+1 reading
+2 assignments
+Show info about module content
+7 videos
+
+
+Total 72 minutes
+1.1 Course Introduction
+	
+
+	5 minutes
+1.2 Definition and Uses of Models, Common Functions
+	
+
+	15 minutes
+1.3 How Models Are Used in Practice
+	
+
+	11 minutes
+1.4 Key Steps in the Modeling Process
+	
+
+	8 minutes
+1.5 A Vocabulary for Modeling
+	
+
+	9 minutes
+1.6 Mathematical Functions
+	
+
+	20 minutes
+1.7 Summary
+	
+
+	4 minutes
+1 reading
+
+
+Total 10 minutes
+PDF of Lecture Slides
+	
+
+	10 minutes
+2 assignments
+
+
+Total 60 minutes
+Module 1: Introduction to Models Quiz
+	
+
+	30 minutes
+Practical Quiz #1
+	
+
+	30 minutes
+Module 2: Linear Models and Optimization
+Module 2
+	
+
+	to complete
+		2 hours
+Module details
+This module introduces linear models, the building block for almost all modeling. Through close examination of the common uses together with examples of linear models, you’ll learn how to apply linear models, including cost functions and production functions to your business. The module also includes a presentation of growth and decay processes in discrete time, growth and decay in continuous time, together with their associated present and future value calculations. Classical optimization techniques are discussed. By the end of this module, you’ll be able to identify and understand the key structure of linear models, and suggest when and how to use them to improve outcomes for your business. You’ll also be able to perform present value calculations that are foundational to valuation metrics. In addition, you will understand how you can leverage models for your business, through the use of optimization to really fine tune and optimize your business functions.
+What's included
+6 videos
+1 reading
+2 assignments
+Show info about module content
+6 videos
+
+
+Total 69 minutes
+2.1 Introduction to Linear Models and Optimization
+	
+
+	16 minutes
+2.2 Growth in Discrete Time
+	
+
+	8 minutes
+2.3 Constant Proportionate Growth
+	
+
+	13 minutes
+2.4 Present and Future Value
+	
+
+	16 minutes
+2.5 Optimization
+	
+
+	13 minutes
+2.6 Summary
+	
+
+	3 minutes
+1 reading
+
+
+Total 10 minutes
+PDF of Lecture Slides
+	
+
+	10 minutes
+2 assignments
+
+
+Total 60 minutes
+Module 2: Linear Models and Optimization Quiz
+	
+
+	30 minutes
+Practice Quiz #2
+	
+
+	30 minutes
+Module 3: Probabilistic Models
+Module 3
+	
+
+	to complete
+		3 hours
+Module details
+This module explains probabilistic models, which are ways of capturing risk in process. You’ll need to use probabilistic models when you don’t know all of your inputs. You’ll examine how probabilistic models incorporate uncertainty, and how that uncertainty continues through to the outputs of the model. You’ll also discover how propagating uncertainty allows you to determine a range of values for forecasting. You’ll learn the most-widely used models for risk, including regression models, tree-based models, Monte Carlo simulations, and Markov chains, as well as the building blocks of these probabilistic models, such as random variables, probability distributions, Bernoulli random variables, binomial random variables, the empirical rule, and perhaps the most important of all of the statistical distributions, the normal distribution, characterized by mean and standard deviation. By the end of this module, you’ll be able to define a probabilistic model, identify and understand the most commonly used probabilistic models, know the components of those models, and determine the most useful probabilistic models for capturing and exploring risk in your own business.
+What's included
+12 videos
+1 reading
+2 assignments
+Show info about module content
+12 videos
+
+
+Total 83 minutes
+3.1 Introduction to Probabilistic Models
+	
+
+	11 minutes
+3.2 Examples of Probabilistic Models
+	
+
+	2 minutes
+3.3 Regression Models
+	
+
+	4 minutes
+3.4 Probability Trees
+	
+
+	5 minutes
+3.5 Monte Carlo Simulations
+	
+
+	6 minutes
+3.6 Markov Chain Models
+	
+
+	6 minutes
+3.7 Building Blocks of Probability Models
+	
+
+	9 minutes
+3.8 The Bernoulli Distribution
+	
+
+	8 minutes
+3.9 The Binomial Distribution
+	
+
+	17 minutes
+3.10 The Normal Distribution
+	
+
+	5 minutes
+3.11 The Empirical Rule
+	
+
+	7 minutes
+3.12 Summary
+	
+
+	2 minutes
+1 reading
+
+
+Total 10 minutes
+PDF of Lecture Slides
+	
+
+	10 minutes
+2 assignments
+
+
+Total 60 minutes
+Module 3: Probabilistic Models Quiz
+	
+
+	30 minutes
+Practice Quiz #3
+	
+
+	30 minutes
+Module 4: Regression Models
+Module 4
+	
+
+	to complete
+		2 hours
+Module details
+This module explores regression models, which allow you to start with data and discover an underlying process. Regression models are the key tools in predictive analytics, and are also used when you have to incorporate uncertainty explicitly in the underlying data. You’ll learn more about what regression models are, what they can and cannot do, and the questions regression models can answer. You’ll examine correlation and linear association, methodology to fit the best line to the data, interpretation of regression coefficients, multiple regression, and logistic regression. You’ll also see how logistic regression will allow you to estimate probabilities of success. By the end of this module, you’ll be able to identify regression models and their key components, understand when they are used, and be able to interpret them so that you can discuss your model and convince others that your model makes sense, with the ultimate goal of implementation.
+What's included
+8 videos
+1 reading
+2 assignments
+Show info about module content
+8 videos
+
+
+Total 70 minutes
+4.1 Introduction to Regression Model
+	
+
+	7 minutes
+4.2 Use of Regression Models
+	
+
+	16 minutes
+4.3 Interpretation of Regression Coefficients
+	
+
+	5 minutes
+4.4 R-squared and Root Mean Squared Error (RMSE)
+	
+
+	13 minutes
+4.5 Fitting Curves to Data
+	
+
+	9 minutes
+4.6 Multiple Regression
+	
+
+	7 minutes
+4.7 Logistic Regression
+	
+
+	9 minutes
+4.8 Summary of Regression Models
+	
+
+	5 minutes
+1 reading
+
+
+Total 10 minutes
+PDF of Lecture Slides
+	
+
+	10 minutes
+2 assignments
+
+
+Total 60 minutes
+Module 4: Regression Models Quiz
+	
+
+	30 minutes
+Practice Quiz #4
+	
+
+	30 minutes
+Earn a career certificate
+Add this credential to your LinkedIn profile, resume, or CV. Share it on social media and in your performance review.
+Instructor
+Instructor ratings
+4.7
+(
+	1,430 ratings
+	)
+Richard Waterman
+University of Pennsylvania
+2 Courses
+
+
+287,818 learners
+Offered by
+University of Pennsylvania
+Learn more
+Explore more from Business Essentials
+Recommended
+Degrees
+Status: Free Trial
+Free Trial
+University of Pennsylvania
+Modeling Risk and Realities
+Course
+Status: Free Trial
+Free Trial
+University of Pennsylvania
+Introduction to Spreadsheets and Models
+Course
+Status: Free Trial
+Free Trial
+Coursera
+Advanced Quantitative Statistics with Excel
+Course
+Status: Free Trial
+Free Trial
+Coursera
+Quantitative Research Methods: Tools for Data Analysis
+Course
+Show 8 more
+Why people choose Coursera for their career
+Felipe M.
+Learner since 2018
+"To be able to take courses at my own pace and rhythm has been an amazing experience. I can learn whenever it fits my schedule and mood."
+Jennifer J.
+Learner since 2020
+"I directly applied the concepts and skills I learned from my courses to an exciting new project at work."
+Larry W.
+Learner since 2021
+"When I need courses on topics that my university doesn't offer, Coursera is one of the best places to go."
+Chaitanya A.
+"Learning isn't just about being better at your job: it's so much more than that. Coursera allows me to learn without limits."
+Learner reviews
+4.6
+reviews
+	9,374
+5 stars
+72.44%
+4 stars
+21.78%
+3 stars
+4.39%
+2 stars
+0.76%
+1 star
+0.60%
+Showing 3 of 9374
+J
+JN
+4
+·
+Reviewed on Jul 4, 2019
+The material is very helpful to get you up to speed quickly. If there could be more emphasis on walking one through the calculations and giving more examples, the course would be a perfect 5 stars.
+N
+NM
+5
+·
+Reviewed on Jul 23, 2017
+Very good background to quantitative modelling. It gets a bit heavy on the mathematical formulas in places, but if you follow through, it helps cement understanding. Good speed/pace of material.
+D
+DP
+5
+·
+Reviewed on Nov 9, 2021
+e​xcellent course teaches you basics in an easy to learn manner. Lots of good information for someone looking to transition into the world of financial analytics or as a refresher of basic concepts.
+View more reviews
+Build essential skills with one of our best deals
+Save now
+Help your team rise higher
+Save 50% now
+Frequently asked questions
+When will I have access to the lectures and assignments?
+To access the course materials, assignments and to earn a Certificate, you will need to purchase the Certificate experience when you enroll in a course. You can try a Free Trial instead, or apply for Financial Aid. The course may offer 'Full Course, No Certificate' instead. This option lets you see all course materials, submit required assessments, and get a final grade. This also means that you will not be able to purchase a Certificate experience.
+What will I get if I subscribe to this Specialization?
+When you enroll in the course, you get access to all of the courses in the Specialization, and you earn a certificate when you complete the work. Your electronic Certificate will be added to your Accomplishments page - from there, you can print your Certificate or add it to your LinkedIn profile.
+Is financial aid available?
+Yes. In select learning programs, you can apply for financial aid or a scholarship if you can’t afford the enrollment fee. If fin aid or scholarship is available for your learning program selection, you’ll find a link to apply on the description page.
+More questions
+Visit the learner help center
+Financial aid available,
+	learn more
+Enroll for free
+Starts Jun 16
+Coursera Footer
+Skills
+Accounting
+Artificial Intelligence (AI)
+Cybersecurity
+Data Analytics
+Digital Marketing
+Human Resources (HR)
+Microsoft Excel
+Project Management
+Python
+SQL
+Professional Certificates
+Google AI Certificate
+Google Cybersecurity Certificate
+Google Data Analytics Certificate
+Google IT Support Certificate
+Google Project Management Certificate
+Google UX Design Certificate
+IBM AI Engineering Certificate
+IBM AI Product Manager Certificate
+IBM Data Science Certificate
+Intuit Academy Bookkeeping Certificate
+Courses & Specializations
+AI Essentials Specialization
+AI For Business Specialization
+AI For Everyone Course
+AI in Healthcare Specialization
+Deep Learning Specialization
+Excel Skills for Business Specialization
+Financial Markets Course
+Machine Learning Specialization
+Prompt Engineering for ChatGPT Course
+Python for Everybody Specialization
+Career Resources
+Career Aptitude Test
+CAPM Certification Requirements
+CompTIA A+ Certification Requirements
+CompTIA Security+ Certification Requirements
+Essential IT Certifications
+High-Income Skills to Learn
+How to Learn Artificial Intelligence
+PMP Certification Requirements
+Popular Cybersecurity Certifications
+Share your Coursera learning story
+Coursera
+About
+What We Offer
+Leadership
+Careers
+Catalog
+Coursera Plus
+Professional Certificates
+MasterTrack® Certificates
+Degrees
+For Enterprise
+For Government
+For Campus
+Become a Partner
+Social Impact
+Free Courses
+Udemy
+Community
+Learners
+Partners
+Beta Testers
+Blog
+The Coursera Podcast
+Tech Blog
+More
+Press
+Investors
+Terms
+Privacy
+Help
+Accessibility
+Contact
+Articles
+Directory
+Affiliates
+Modern Slavery Statement
+Cookies Preference Center
+Learn Anywhere
+© 2026 Coursera Inc. All rights reserved.
