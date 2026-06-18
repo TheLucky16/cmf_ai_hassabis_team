@@ -30,7 +30,7 @@ def create_semantic_blocks(cleaned_markdown: str, prompt_path: str = 'inputs/age
     return blocks
 
 
-input_file = ...
+input_file = 'outputs/agent_1_output.md'
 output_file = 'outputs/agent_2_output.json'
 
 if not os.path.exists(input_file):
@@ -42,6 +42,7 @@ with open(input_file, 'r', encoding='utf-8') as f:
 
 semantic_blocks = create_semantic_blocks(cleaned_text)
 
+os.makedirs(os.path.dirname(output_file) or '.', exist_ok=True)
 with open(output_file, 'w', encoding='utf-8') as f:
     json.dump(semantic_blocks, f, ensure_ascii=False)
 
