@@ -24,7 +24,10 @@ All agents call the LLM through `get_answer()` in `chatbot.py` (Google Gemini, f
    via a local `.env` file (recommended, gitignored):
    `cp .env.example .env`  then edit `.env` and paste your key.
    (Alternatively: `export GEMINI_API_KEY="your-key"`.)
-4) Run the pipeline in order:
+4) Run the whole pipeline: `python main.py`
+   (runs the three agents in order and validates each handoff file).
+
+   Or run the stages individually:
    - `python agent_1.py`   (scrape + clean a course page)
    - `python agent_2.py`   (split into micro-lessons)
    - `python agent_3.py`   (build personalized learning paths)
