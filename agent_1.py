@@ -161,4 +161,10 @@ with open(webpage_path) as f:
     webpage = f.read()
 
 prompt = prompt.replace('[PASTE RAW TEXT HERE]', webpage)
-#answer = get_answer(prompt)
+answer = get_answer(prompt)
+
+# Hand off the cleaned course layout to Agent 2.
+os.makedirs('outputs', exist_ok=True)
+with open('outputs/agent_1_output.md', 'w', encoding='utf-8') as f:
+    f.write(answer)
+print('Wrote cleaned course layout to outputs/agent_1_output.md')
