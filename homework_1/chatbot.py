@@ -68,21 +68,3 @@ def get_answer(prompt, *, model=DEFAULT_MODEL, temperature=0.4, max_retries=4):
             raise
 
     raise last_err
-
-
-def ask_llm(prompt):
-    client = OpenAI(
-        base_url="https://openrouter.ai/api/v1",
-        api_key='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',
-    )
-    response = client.chat.completions.create(
-        model="openrouter/owl-alpha",
-        messages=[
-            {
-                "role": "user",
-                "content": prompt
-            }
-        ]
-    )
-
-    return response.choices[0].message.content
