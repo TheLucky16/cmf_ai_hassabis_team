@@ -86,14 +86,24 @@ def retry_wait_seconds(error_text, attempt):
     return 2 * (attempt + 1)
 
 
+def _provider_names(provider):
+    if provider is None:
+        return []
+    if isinstance(provider, str):
+        return [name.strip() for name in provider.split(",") if name.strip()]
+    return list(provider)
+
+
 def _provider_order(provider=None):
     global PROVIDER_INDEX
     providers = get_llm_providers()
 
     if provider:
-        chosen = [p for p in providers if p["name"] == provider]
-        if not chosen:
-            raise RuntimeError(f"Provider '{provider}' is not configured.")
+        names = _provider_names(provider)
+        chosen = [p for name in names for p in providers if p["name"] == name]
+        missing = [name for name in names if name not in [p["name"] for p in chosen]]
+        if missing:
+            raise RuntimeError(f"Provider(s) not configured: {', '.join(missing)}")
         return chosen
 
     start = PROVIDER_INDEX % len(providers)
