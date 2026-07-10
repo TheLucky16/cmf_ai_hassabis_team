@@ -11,6 +11,15 @@ def default_action(state):
     return "learn"
 
 
+def enforce_action(action, state):
+    latest = state["history"][-1] if state["history"] else {}
+    if latest.get("speaker") == "Mentor" and latest.get("action") == "answer_question":
+        return "learn"
+    if latest.get("speaker") == "Mentor" and latest.get("action") == "test":
+        return "take_test"
+    return action
+
+
 def decide_action(student_prompt, lesson, state, provider=None):
     latest = state["history"][-1] if state["history"] else {}
     prompt = f"""
@@ -42,12 +51,14 @@ Rules:
 - If the Mentor is checking application, choose take_test.
 """
     raw = get_answer(prompt.strip(), provider=provider, temperature=0, max_tokens=80)
-    return choose_label(raw, STUDENT_ACTIONS, default_action(state))
+    action = choose_label(raw, STUDENT_ACTIONS, default_action(state))
+    return enforce_action(action, state)
 
 
 def reply(student_prompt, lesson, state, provider=None):
     action = decide_action(student_prompt, lesson, state, provider=provider)
     notes = state.get("student_notes", "")
+    bluff = False
 
     if action == "ask_question":
         text = ask_question(student_prompt, lesson, state["history"], notes=notes, provider=provider)
@@ -56,7 +67,6 @@ def reply(student_prompt, lesson, state, provider=None):
         bluff = lesson["number"] in state.get("bluff_lessons", []) and lesson["number"] not in used_bluffs
         text = take_test(student_prompt, lesson, state["history"], notes=notes, bluff=bluff, provider=provider)
     else:
-        bluff = False
         text = learn(student_prompt, lesson, state["history"], notes=notes, provider=provider)
 
     return {"speaker": "Student", "action": action, "text": text, "bluff": bluff}

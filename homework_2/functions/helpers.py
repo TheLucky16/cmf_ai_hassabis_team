@@ -41,7 +41,7 @@ def split_lessons(lessons_text):
     return lessons
 
 
-def format_history(history, max_turns=10):
+def format_history(history, max_turns=6):
     recent = history[-max_turns:]
     return "\n\n".join(f"{m['speaker']}: {m['text']}" for m in recent)
 
@@ -77,6 +77,13 @@ def choose_label(raw, allowed, default):
 def get_status(text):
     match = re.search(r"STATUS:\s*(.+)", text)
     return match.group(1).strip().lower() if match else ""
+
+
+def retry_wait_seconds(error_text, attempt):
+    match = re.search(r"try again in ([0-9.]+)s", error_text, re.I)
+    if match:
+        return float(match.group(1)) + 1
+    return 2 * (attempt + 1)
 
 
 def _provider_order(provider=None):
@@ -171,6 +178,6 @@ def get_answer(prompt, system=None, provider=None, temperature=0.4, max_tokens=1
             except Exception as exc:
                 errors.append(f"{settings['name']}: {exc}")
                 if attempt < max_retries - 1:
-                    time.sleep(2 * (attempt + 1))
+                    time.sleep(retry_wait_seconds(str(exc), attempt))
 
     raise RuntimeError("All LLM providers failed: " + "; ".join(errors))

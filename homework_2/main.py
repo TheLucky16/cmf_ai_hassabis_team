@@ -80,7 +80,7 @@ def load_state(resume):
     return new_state()
 
 
-def run(max_turns=80, resume=False):
+def run(max_turns=80, resume=False, provider=None):
     mentor_prompt = read_text(INPUTS / "mentor_prompt.txt")
     student_prompt = read_text(INPUTS / "student_prompt.txt")
     lessons = split_lessons(read_text(INPUTS / "lessons.md"))
@@ -91,11 +91,11 @@ def run(max_turns=80, resume=False):
         lesson = lessons[state["lesson_index"]]
 
         if state["next_speaker"] == "Mentor":
-            message = mentor.reply(mentor_prompt, lesson, state, total_lessons=len(lessons))
+            message = mentor.reply(mentor_prompt, lesson, state, total_lessons=len(lessons), provider=provider)
             add_turn(state, message)
             update_after_mentor(state, message, len(lessons))
         else:
-            message = student.reply(student_prompt, lesson, state)
+            message = student.reply(student_prompt, lesson, state, provider=provider)
             add_turn(state, message)
             update_after_student(state, lesson, message)
 
@@ -110,4 +110,7 @@ def run(max_turns=80, resume=False):
 
 
 if __name__ == "__main__":
-    run(resume="--resume" in sys.argv)
+    provider = None
+    if "--provider" in sys.argv:
+        provider = sys.argv[sys.argv.index("--provider") + 1]
+    run(resume="--resume" in sys.argv, provider=provider)

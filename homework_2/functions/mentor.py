@@ -14,6 +14,17 @@ def default_action(state):
     return "test"
 
 
+def enforce_action(action, state):
+    latest = state["history"][-1] if state["history"] else {}
+    if not state.get("lesson_started"):
+        return "teach"
+    if latest.get("speaker") == "Student" and latest.get("action") == "ask_question":
+        return "answer_question"
+    if latest.get("speaker") == "Student" and latest.get("action") in ["learn", "take_test"]:
+        return "test"
+    return action
+
+
 def decide_action(mentor_prompt, lesson, state, provider=None):
     latest = state["history"][-1] if state["history"] else {}
     prompt = f"""
@@ -46,7 +57,8 @@ Rules:
 - If the latest Student message attempts the practice task, choose test.
 """
     raw = get_answer(prompt.strip(), provider=provider, temperature=0, max_tokens=80)
-    return choose_label(raw, MENTOR_ACTIONS, default_action(state))
+    action = choose_label(raw, MENTOR_ACTIONS, default_action(state))
+    return enforce_action(action, state)
 
 
 def reply(mentor_prompt, lesson, state, total_lessons=10, provider=None):
