@@ -7,6 +7,7 @@ from pathlib import Path
 # Example:
 # {
 #   "provider_order": ["groq", "gemini", "openrouter"],
+#   "role_providers": {"mentor": "groq", "student": "gemini,groq"},
 #   "groq": {"api_key": "...", "model": "llama-3.3-70b-versatile"},
 #   "gemini": {"api_key": "...", "model": "gemini-2.5-flash"},
 #   "openrouter": {"api_key": "...", "model": "google/gemini-2.5-flash"}
@@ -83,3 +84,12 @@ def get_llm_providers():
         "No LLM API keys found. Create local credentials at "
         f"{path} or set GROQ_API_KEY, GEMINI_API_KEY, or OPENROUTER_API_KEY."
     )
+
+
+def get_role_providers():
+    credentials = load_credentials()
+    role_providers = credentials.get("role_providers", {})
+    return {
+        "mentor": os.environ.get("MENTOR_PROVIDER") or credentials.get("mentor_provider") or role_providers.get("mentor"),
+        "student": os.environ.get("STUDENT_PROVIDER") or credentials.get("student_provider") or role_providers.get("student"),
+    }

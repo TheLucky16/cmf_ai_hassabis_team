@@ -1,5 +1,6 @@
 import re, sys
 from pathlib import Path
+from config import get_role_providers
 from functions import mentor, student
 from functions.helpers import get_status, read_json, read_text, save_dialogue, save_state, split_lessons
 
@@ -80,22 +81,31 @@ def load_state(resume):
     return new_state()
 
 
-def run(max_turns=80, resume=False, provider=None):
+def arg_value(flag):
+    if flag in sys.argv:
+        return sys.argv[sys.argv.index(flag) + 1]
+    return None
+
+
+def run(max_turns=80, resume=False, provider=None, mentor_provider=None, student_provider=None):
     mentor_prompt = read_text(INPUTS / "mentor_prompt.txt")
     student_prompt = read_text(INPUTS / "student_prompt.txt")
     lessons = split_lessons(read_text(INPUTS / "lessons.md"))
     state = load_state(resume)
+    role_providers = get_role_providers()
+    mentor_provider = mentor_provider or provider or role_providers.get("mentor")
+    student_provider = student_provider or provider or role_providers.get("student")
     save_outputs(state)
 
     while not state["course_complete"] and state["turn"] < max_turns:
         lesson = lessons[state["lesson_index"]]
 
         if state["next_speaker"] == "Mentor":
-            message = mentor.reply(mentor_prompt, lesson, state, total_lessons=len(lessons), provider=provider)
+            message = mentor.reply(mentor_prompt, lesson, state, total_lessons=len(lessons), provider=mentor_provider)
             add_turn(state, message)
             update_after_mentor(state, message, len(lessons))
         else:
-            message = student.reply(student_prompt, lesson, state, provider=provider)
+            message = student.reply(student_prompt, lesson, state, provider=student_provider)
             add_turn(state, message)
             update_after_student(state, lesson, message)
 
@@ -110,7 +120,9 @@ def run(max_turns=80, resume=False, provider=None):
 
 
 if __name__ == "__main__":
-    provider = None
-    if "--provider" in sys.argv:
-        provider = sys.argv[sys.argv.index("--provider") + 1]
-    run(resume="--resume" in sys.argv, provider=provider)
+    run(
+        resume="--resume" in sys.argv,
+        provider=arg_value("--provider"),
+        mentor_provider=arg_value("--mentor-provider"),
+        student_provider=arg_value("--student-provider"),
+    )
